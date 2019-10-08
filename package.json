@@ -1,0 +1,10 @@
+{
+  "name": "Gurvi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ahmad Tahhan",
+  "license": "Creative Commons",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

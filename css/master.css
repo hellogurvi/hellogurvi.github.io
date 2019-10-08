@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap&subset=latin-ext');
+body{
+  font-family: 'Lato', sans-serif;
+}
+h1{
+  font-size: 48px;
+}
+@keyframes rotate {
+	from {
+		-webkit-transform: rotate(0);
+		-moz-transform: rotate(0);
+		-ms-transform: rotate(0);
+		-o-transform: rotate(0);
+		transform: rotate(0)
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}
+
+@keyframes strokeDashArray {
+	10%,
+	from {
+		stroke-dasharray: 2.3525em .4705em;
+		stroke-dashoffset: 0
+	}
+	50% {
+		stroke-dasharray: .001em 2.825em;
+		stroke-dashoffset: -2.826em
+	}
+	60% {
+		stroke-dasharray: .001em 2.825em
+	}
+	to {
+		stroke-dasharray: 2.3525em .4705em;
+		stroke-dashoffset: -2.826em
+	}
+}
+a:hover{
+  text-decoration: none;
+}
+.nav-link:hover{
+  color: #fff!important;
+}
+.text-prime-blue{
+  color: #0000FF!important;
+}
+.text-helper-blue{
+  color: #3838FF!important;
+}
+.text-light-blue{
+  color: #7A7AF8!important;
+}
+.font-48{
+  font-size: 48px;
+}
+/*
+============
+Top gradient CSS
+============
+*/
+.top-gradient-child-1, .top-gradient-child-2, .top-gradient-child-3{
+  height: 10px;
+}
+.top-gradient-child-1{
+  background-color: #B8B8FF;
+}
+.top-gradient-child-2{
+  background-color: #E7E7FF;
+}
+.top-gradient-child-3{
+  background-color: #F2F2FA;
+}
+/*
+============
+Bottom gradient CSS
+============
+*/
+.bottom-gradient-child-1, .bottom-gradient-child-2, .bottom-gradient-child-3, .bottom-gradient-child-4{
+  height: 57px;
+}
+.bottom-gradient-child-1{
+  background-color: #E7E7FF;
+}
+.bottom-gradient-child-2{
+  background-color: #B8B8FF;
+}
+.bottom-gradient-child-3{
+  background-color: #8989FF;
+}
+.bottom-gradient-child-4{
+  background-color: #3D3FFF;
+}
+.nav-link{
+  color: #3838FF!important;
+  padding-left: 1rem!important;
+  padding-right: 1rem!important;
+}
+.active >.nav-link{
+  font-weight: 900;
+  color: #0000FF!important;
+}
+.outline-text{
+  color: white;
+  text-shadow:
+   -1px -1px 0 #2323FF,
+    1px -1px 0 #2323FF,
+    -1px 1px 0 #2323FF,
+     1px 1px 0 #2323FF;
+}
+.outline-text:hover{
+  color: #0000FF!important;
+}
+.item-description{
+  font-size: 24px;
+  color: #7A7AF8;
+  line-height: 1.2;
+}
+.blog-description{
+  font-size: 24px;
+  color: #0000FF;
+  line-height: 1.7;
+}
+.date >small{
+  font-weight: 700!important;
+}
+.copyright-wrapper{
+  background-color: #0000FF;
+  height: 57px;
+}
+.social-links-wrapper{
+  background-color: #F9F9F9;
+  height: 57px;
+}
+.about-description{
+  font-size: 24px;
+  color: #0000FF;
+}
+.prev-nav, .next-nav{
+  color: #0000FF;
+  font-size: 30px;
+}
+.prev-nav::before{
+  content: '<—';
+  position: absolute;
+  left: -10px;
+}
+.next-nav::before{
+  content: '—>';
+  position: absolute;
+  right: -10px;
+}
+.pagination-border{
+  height: 3px;
+  background-color: #2D2DFF;
+}
+.showcase{
+  background-color: #F4F9FF;
+  padding: 8rem;
+}
+.contact-wrapper{
+  width: 50rem;
+  height: 50rem;
+  background: #0000FF;
+  border-radius: 50%;
+}
+#pointer,#magic-cursor {
+ pointer-events: none;
+}
+* {
+ cursor: none!important;
+}
+#magic-cursor {
+ position: absolute;
+ width: 30px;
+ height: 30px;
+ z-index: 0;
+}
+#pointer {
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 25px;
+ height: 25px;
+ background-color: #0000FF;
+ border-radius: 50%;
+ opacity: 1;
+ -webkit-transform: translate(-50%,-50%);
+ -moz-transform: translate(-50%,-50%);
+ -ms-transform: translate(-50%,-50%);
+ -o-transform: translate(-50%,-50%);
+ transform: translate(-50%,-50%);
+ background-position: center center;
+ background-size: cover;
+}
+.next-project-text{
+  font-size: 75px;
+}
+/*
+============
+Code for responsive (mobile view)
+============
+*/
+@media(max-width:480px){
+  .nav-link{
+    padding-left: 0.5rem!important;
+    padding-right: 0.5rem!important;
+  }
+  .prev-nav, .next-nav{
+    color: #0000FF;
+    font-size: 15px;
+  }
+  .prev-nav::before{
+    left: -5px;
+  }
+  .next-nav::before{
+    right: -5px;
+  }
+  .showcase{
+    padding: 0.5rem;
+  }
+  .next-project-text{
+    font-size: 35px;
+  }
+  .contact-wrapper{
+    width: 20rem;
+    height: 20rem;
+    background: #0000FF;
+    border-radius: 50%;
+  }
+  .contact-text{
+    font-size: 24px;
+  }
+  .arrow-contact{
+    height: 90px;
+  }
+}
